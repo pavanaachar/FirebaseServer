@@ -11,9 +11,8 @@ A Firebase Admin instance to publish messages via Firebase Cloud Messaging
 
 class FirebaseServer(object):
     def __init__(self):
-        cred = credentials.Certificate('C:\\Users\\Pavana\\Desktop\\CMPE295B\\' + \
-                            'Final Project\\Server\\AdminSDK' + \
-                            '\\campuswatchfirebaseproject-firebase-adminsdk-vv1um-192c608370.json')
+        cred = credentials.Certificate('//home//priyashree_achar//FirebaseServer//AdminSDK//' + \
+                            'campuswatchfirebaseproject-firebase-adminsdk-vv1um-192c608370.json')
         self.app = firebase_admin.initialize_app(cred)
     '''
     Publish message via Firebase cloud messaging
